@@ -6,13 +6,19 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
+  background-color: gainsboro;
+  text-align: center;
+  color: #385170;
 }
 
 .container {
-  max-width: 26rem;
+  max-width: 20rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -20,4 +26,41 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.form_input {
+  display: block;
+  margin: 1em auto;
+  width: 70%;
+  background-color: #385170;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form_input::placeholder {
+  color: white;
+}
+
+button {
+  background-color: #385170;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+
+.userIcon {
+  max-width: 40%;
+  background-color: #385170;
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 20px;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../style.css'
-
+import userIcon from '../img/user.png'
 
 const Registration = () => {
     const [user, setUser] = useState({
@@ -31,14 +31,14 @@ const Registration = () => {
 
     return (
         <>
+        <h1>REGISTRATION</h1>
         <div className="container">
-                <h1>REGISTRATION</h1>
-                <img></img>
-                <form onSubmit={ handleSubmit }>
-                    <input name="email" type="email" placeholder="Email Address" value={user.email} onChange ={ handleChangeEmail } ></input>
-                    <input name="username" type="text" placeholder="User name" value={user.username} onChange = { handleChange } ></input>
-                    <input name="password" type="password" placeholder="Password" value={user.password} onChange = { handleChange }></input>
-                    <input name="passwordConfirm" type="password" placeholder="Confirm Password" value={user.passwordConfirm} onChange = { handleChange }></input>
+                <img className="userIcon" src={userIcon}></img>
+                <form  onSubmit={ handleSubmit }>
+                    <input className="form_input" name="email" type="email" placeholder="Email Address" value={user.email} onChange ={ handleChangeEmail } ></input>
+                    <input className="form_input" name="username" type="text" placeholder="User name" value={user.username} onChange = { handleChange } ></input>
+                    <input className="form_input" name="password" type="password" placeholder="Password" value={user.password} onChange = { handleChange }></input>
+                    <input className="form_input" name="passwordConfirm" type="password" placeholder="Confirm Password" value={user.passwordConfirm} onChange = { handleChange }></input>
                     <button type="submit" onClick={ () => {console.log(user)}}>REGISTER</button>
                 </form>
             </div>
